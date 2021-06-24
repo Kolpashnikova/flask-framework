@@ -8,6 +8,6 @@ bokeh
 requests
 flask_wtf
 wtforms
-flask_boostrap
+Flask-Bootstrap4
 simplejson
 datetime
