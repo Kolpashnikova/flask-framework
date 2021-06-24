@@ -6,3 +6,4 @@ python-dotenv
 altair
 bokeh
 requests
+os
