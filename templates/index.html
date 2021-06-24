@@ -7,24 +7,37 @@
     <meta name="author" content="@gotoariel">
     <!-- <link rel="icon" href="favicon.ico"> -->
 
-    <title>Wilkommen, bienvenue, and welcome to Heroku!</title>
+    <title>Stock App</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.3.2.min.js"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.2.min.js"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.2.min.js"
+            crossorigin="anonymous"></script>
+
+    {% import "bootstrap/wtf.html" as wtf %}
   </head>
   <body>
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-left">
-          <h2>Hello, World!</h2>
-          <ul>
-            <li>{{ key }}</li>
-            <li><a href="/about">About</a></li>
-            <li><a target="_blank" href="https://www.heroku.com/">Heroku</a></li>
-            <li><a target="_blank" href="http://flask.pocoo.org/">Flask</a></li>
-            <li><a target="_blank" href="http://jinja.pocoo.org/">Jinja2</a></li>
-            <li><a target="_blank" href="http://getbootstrap.com/">Bootstrap</a></li>
-          </ul>
+          <h2>Stock Ticker App</h2>
+          <div class="form-container">
+
+              {{ wtf.quick_form(form) }}
+
+          </div>
+
+          <div class="output-container">
+
+              {{ output|safe }}
+
+          </div>
         </div>
       </div>
     </div>

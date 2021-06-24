@@ -7,3 +7,8 @@ altair
 bokeh
 requests
 os
+flask_wtf
+wtforms
+flask_boostrap
+simplejson
+datetime
